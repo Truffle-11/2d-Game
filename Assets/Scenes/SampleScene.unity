@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 86455892}
   - component: {fileID: 86455893}
   m_Layer: 0
-  m_Name: Testing square
+  m_Name: Tested on Trents Laptop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
