@@ -181,13 +181,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119251245}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.24863909, w: 0.96859616}
   m_LocalPosition: {x: 10.8566, y: -0.2, z: 0}
   m_LocalScale: {x: 7.2616997, y: 0.25925088, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1466291956}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 28.794}
 --- !u!61 &119251247
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -623,7 +623,6 @@ GameObject:
   - component: {fileID: 1250302857}
   - component: {fileID: 1250302856}
   - component: {fileID: 1250302855}
-  - component: {fileID: 1250302854}
   m_Layer: 3
   m_Name: JumpyBoi1 (1)
   m_TagString: Ground
@@ -646,20 +645,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1466291956}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1250302854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1250302852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 072fc455fb2ac944f94e25b746a82a99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  launchForce: 12
-  playerTag: Player
 --- !u!61 &1250302855
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -669,7 +654,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1250302852}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 59f2f0286d21fdf479ec338f23135c22, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -689,7 +674,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -844,7 +829,6 @@ GameObject:
   - component: {fileID: 1267814408}
   - component: {fileID: 1267814407}
   - component: {fileID: 1267814406}
-  - component: {fileID: 1267814410}
   m_Layer: 3
   m_Name: JumpyBoi1
   m_TagString: Ground
@@ -876,7 +860,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1267814404}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 59f2f0286d21fdf479ec338f23135c22, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -896,7 +880,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1038,20 +1022,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1267814410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1267814404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 072fc455fb2ac944f94e25b746a82a99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  launchForce: 12
-  playerTag: Player
 --- !u!1 &1311949571
 GameObject:
   m_ObjectHideFlags: 0
@@ -1190,10 +1160,9 @@ GameObject:
   - component: {fileID: 1428332934}
   - component: {fileID: 1428332936}
   - component: {fileID: 1428332935}
-  - component: {fileID: 1428332937}
   m_Layer: 3
   m_Name: Enemy
-  m_TagString: Ground
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1310,19 +1279,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1428332937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1428332933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bd66e7fe68c7a44f98d16cb4048cf28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerTag: Player
 --- !u!1 &1466291955
 GameObject:
   m_ObjectHideFlags: 0
@@ -1729,6 +1685,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 6
   jumpForce: 7
+  health: 3
+  EnemyTag: Enemy
+  deadPlayer: {fileID: 0}
   rb: {fileID: 1914968575}
   groundCheck: {fileID: 83085564}
   groundDistance: 0.4
