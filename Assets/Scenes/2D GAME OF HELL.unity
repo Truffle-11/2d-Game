@@ -168,7 +168,7 @@ GameObject:
   - component: {fileID: 119251249}
   m_Layer: 3
   m_Name: Ice
-  m_TagString: Ground
+  m_TagString: Ice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1200,7 +1200,7 @@ GameObject:
   - component: {fileID: 1428332934}
   - component: {fileID: 1428332936}
   - component: {fileID: 1428332935}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
