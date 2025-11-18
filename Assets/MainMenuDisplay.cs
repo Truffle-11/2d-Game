@@ -1,21 +1,42 @@
 using Unity.Netcode;
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using Unity.Services.Core;
+using Unity.Services.Authentication;
 
 public class MainMenuDisplay : MonoBehaviour
 {
-    public string gameplaySceneName = "2D GAME OF HELL";
+    public GameObject connectingPanel;
+    public GameObject menuPanel;
     public TMP_InputField joinCodeInputField;
 
+    private async void Start()
+    {
+        try
+        {
+            await UnityServices.InitializeAsync();
+            await AuthenticationService.Instance.SignInAnonymouslyAsync();
+            Debug.Log($"Player Id: {AuthenticationService.Instance.PlayerId}");
+        }
+        catch (Exception e)
+        {
+            Debug.LogError(e);
+            return;
+        }
+
+        connectingPanel.SetActive(false);
+        menuPanel.SetActive(true);
+
+    }
     public void StartHost()
     {
-        NetworkManager.Singleton.StartHost();
-        NetworkManager.Singleton.SceneManager.LoadScene(gameplaySceneName, LoadSceneMode.Single);
+        HostManager.Instance.StartHost();
     }
 
     public void StartClient()
     {
-        NetworkManager.Singleton.StartClient();
+        ClientManager.Instance.StartClient(joinCodeInputField.text);
     }
 }
