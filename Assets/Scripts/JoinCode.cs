@@ -1,27 +1,21 @@
-using System.Collections;
 using TMPro;
-using Unity.Netcode;
 using UnityEngine;
 
-public class JoinCode : NetworkBehaviour
+public class JoinCode : MonoBehaviour
 {
     public TMP_Text joinCodeText;
 
-    public override void OnNetworkSpawn()
+    private void Start()
     {
-        if (IsHost)
-        {
-            StartCoroutine(WaitForJoinCode());
-        }
-    }
+        Debug.Log("JoinCode.Start, SessionJoinCode = " + SessionInfo.JoinCode);
 
-    private IEnumerator WaitForJoinCode()
-    {
-        while (HostManager.Instance == null || string.IsNullOrEmpty(HostManager.Instance.JoinCode))
+        if (joinCodeText != null)
         {
-            yield return null;
+            joinCodeText.text = SessionInfo.JoinCode;
         }
-
-        joinCodeText.text = HostManager.Instance.JoinCode;
+        else
+        {
+            Debug.LogError("Join code text refrence is missing on " + gameObject.name);
+        }
     }
 }

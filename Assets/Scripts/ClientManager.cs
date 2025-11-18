@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using Unity.Netcode;
 using Unity.Netcode.Transports.UTP;
 using Unity.Networking.Transport.Relay;
@@ -27,24 +25,24 @@ public class ClientManager : MonoBehaviour
 
     public async void StartClient(string joinCode)
     {
+        Debug.Log("StartClient called with code: " + joinCode);
+
+        SessionInfo.JoinCode = joinCode;
+        Debug.Log("SessionInfo.JoinCode on client set to: " + SessionInfo.JoinCode);
+
         JoinAllocation allocation;
 
         try
         {
             allocation = await RelayService.Instance.JoinAllocationAsync(joinCode);
         }
-        catch
+        catch (Exception e)
         {
-            Debug.LogError("Relay get join code request failed");
+            Debug.LogError("Relay join allocation request failed: " + e.Message);
             throw;
         }
 
-        Debug.Log($"Client: {allocation.ConnectionData[0]} {allocation.ConnectionData[1]}");
-        Debug.Log($"Host: {allocation.HostConnectionData[0]} {allocation.HostConnectionData[1]}");
-        Debug.Log($"Client: {allocation.AllocationId}");
-
         var relayServerData = new RelayServerData(allocation, "dtls");
-
         NetworkManager.Singleton.GetComponent<UnityTransport>().SetRelayServerData(relayServerData);
 
         NetworkManager.Singleton.StartClient();

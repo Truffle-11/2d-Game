@@ -3,7 +3,6 @@ using Unity.Netcode;
 using Unity.Services.Relay;
 using Unity.Services.Relay.Models;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using Unity.Networking.Transport.Relay;
 using Unity.Netcode.Transports.UTP;
 
@@ -41,9 +40,6 @@ public class HostManager : MonoBehaviour
             return;
         }
 
-        Debug.Log("server: " + allocation.ConnectionData[0] + " " + allocation.ConnectionData[1]);
-        Debug.Log("server: " + allocation.AllocationId);
-
         try
         {
             JoinCode = await RelayService.Instance.GetJoinCodeAsync(allocation.AllocationId);
@@ -54,6 +50,9 @@ public class HostManager : MonoBehaviour
             return;
         }
 
+        Debug.Log("Host got join code: " + JoinCode);
+        SessionInfo.JoinCode = JoinCode;
+
         var relayServerData = new RelayServerData(allocation, "dtls");
         NetworkManager.Singleton.GetComponent<UnityTransport>().SetRelayServerData(relayServerData);
 
@@ -63,6 +62,9 @@ public class HostManager : MonoBehaviour
             return;
         }
 
-        NetworkManager.Singleton.SceneManager.LoadScene(gameplaySceneName, LoadSceneMode.Single);
+        NetworkManager.Singleton.SceneManager.LoadScene(
+            gameplaySceneName,
+            UnityEngine.SceneManagement.LoadSceneMode.Single
+        );
     }
 }

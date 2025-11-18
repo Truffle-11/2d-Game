@@ -28,8 +28,8 @@ public class MainMenuDisplay : MonoBehaviour
 
         connectingPanel.SetActive(false);
         menuPanel.SetActive(true);
-
     }
+
     public void StartHost()
     {
         HostManager.Instance.StartHost();
