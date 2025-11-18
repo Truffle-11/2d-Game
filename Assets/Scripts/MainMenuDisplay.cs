@@ -16,19 +16,30 @@ public class MainMenuDisplay : MonoBehaviour
     {
         try
         {
-            await UnityServices.InitializeAsync();
-            await AuthenticationService.Instance.SignInAnonymouslyAsync();
-            Debug.Log($"Player Id: {AuthenticationService.Instance.PlayerId}");
+            if (!UnityServices.State.Equals(ServicesInitializationState.Initialized))
+            {
+                await UnityServices.InitializeAsync();
+            }
+
+            if (!AuthenticationService.Instance.IsSignedIn)
+            {
+                await AuthenticationService.Instance.SignInAnonymouslyAsync();
+                Debug.Log($"Player Id: {AuthenticationService.Instance.PlayerId}");
+            }
+            else
+            {
+                Debug.Log("Player already signed in.");
+            }
         }
         catch (Exception e)
         {
             Debug.LogError(e);
-            return;
         }
 
         connectingPanel.SetActive(false);
         menuPanel.SetActive(true);
     }
+
 
     public void StartHost()
     {
@@ -38,5 +49,11 @@ public class MainMenuDisplay : MonoBehaviour
     public void StartClient()
     {
         ClientManager.Instance.StartClient(joinCodeInputField.text);
+    }
+
+    public void LeaveGame()
+    {
+        Debug.Log("Left Game");
+        Application.Quit();
     }
 }

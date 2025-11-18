@@ -62,9 +62,6 @@ public class HostManager : MonoBehaviour
             return;
         }
 
-        NetworkManager.Singleton.SceneManager.LoadScene(
-            gameplaySceneName,
-            UnityEngine.SceneManagement.LoadSceneMode.Single
-        );
+        NetworkManager.Singleton.SceneManager.LoadScene(gameplaySceneName,UnityEngine.SceneManagement.LoadSceneMode.Single);
     }
 }
