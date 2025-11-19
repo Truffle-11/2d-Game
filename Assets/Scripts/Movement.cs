@@ -18,6 +18,8 @@ public class Movement : NetworkBehaviour
     public LayerMask groundMask;
     private bool isGrounded;
     private bool isDead;
+    private float moveInput;
+    private bool jumpRequested;
 
     void Start()
     {
@@ -60,21 +62,33 @@ public class Movement : NetworkBehaviour
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundDistance, groundMask);
 
-        float x = Input.GetAxis("Horizontal");
+        moveInput = Input.GetAxis("Horizontal");
+
+        if (Input.GetButtonDown("Jump") && isGrounded)
+        {
+            jumpRequested = true;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (!IsOwner || isDead) return;
 
         Vector2 velocity = rb.velocity;
 
-        if (Mathf.Abs(x) > 0.001f)
+        if (Mathf.Abs(moveInput) > 0.001f)
         {
-            velocity.x = x * moveSpeed;
+            velocity.x = moveInput * moveSpeed;
         }
 
         rb.velocity = velocity;
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (jumpRequested && isGrounded)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
+
+        jumpRequested = false;
     }
 
     [ServerRpc]
