@@ -606,6 +606,11 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 8
+  parent: {fileID: 0}
+  contain: {fileID: 6865899563175180341}
+  currentHearts: 0
+  alive: {fileID: 21300000, guid: ed6c6cbb2cfd67b418e58e1f454ad73b, type: 3}
+  dead: {fileID: 21300000, guid: e8aa73bfc60504c4eb94b61cdfefc04a, type: 3}
 --- !u!50 &4490963462692417944
 Rigidbody2D:
   serializedVersion: 4
@@ -772,7 +777,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2458461469792377448}
-  - component: {fileID: 5507355520392185404}
   m_Layer: 0
   m_Name: Hearts
   m_TagString: Untagged
@@ -798,23 +802,6 @@ Transform:
   - {fileID: 1495713310451393195}
   m_Father: {fileID: 6196417022397234430}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5507355520392185404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6865899563175180341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fe38d23241aba34d8e2498887838ec1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parent: {fileID: 6589287937312838059}
-  contain: {fileID: 6865899563175180341}
-  currentHearts: 0
-  alive: {fileID: 21300000, guid: ed6c6cbb2cfd67b418e58e1f454ad73b, type: 3}
-  dead: {fileID: 21300000, guid: e8aa73bfc60504c4eb94b61cdfefc04a, type: 3}
 --- !u!1 &7671482044068399560
 GameObject:
   m_ObjectHideFlags: 0

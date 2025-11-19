@@ -20,6 +20,10 @@ public class Movement : NetworkBehaviour
     private bool isDead;
     private float moveInput;
     private bool jumpRequested;
+    public GameObject contain;
+    public float currentHearts;
+    public Sprite alive;
+    public Sprite dead;
 
     void Start()
     {
@@ -51,6 +55,8 @@ public class Movement : NetworkBehaviour
 
     void Update()
     {
+        UpdateHearts();
+        
         if (!IsOwner) return;
 
         if (!isDead && health <= 0)
@@ -117,6 +123,21 @@ public class Movement : NetworkBehaviour
         else
         {
             Destroy(gameObject);
+        }
+    }
+
+    void UpdateHearts()
+    {
+        for (int i = 0; i < contain.transform.childCount; i++)
+        {
+            Transform heart = contain.transform.GetChild(i);
+
+            if (i < health)
+                heart.GetComponent<SpriteRenderer>().sprite = alive;   // show heart
+            else
+                heart.GetComponent<SpriteRenderer>().sprite = dead; // hide heart
+            
+            heart.gameObject.SetActive(true);
         }
     }
 }
