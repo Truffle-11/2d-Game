@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5000887499450790329}
-  - component: {fileID: 3195451788168127613}
   m_Layer: 0
   m_Name: PlayerCamera
   m_TagString: Untagged
@@ -33,45 +32,6 @@ Transform:
   - {fileID: 8214328059462726551}
   m_Father: {fileID: 6196417022397234430}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3195451788168127613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1156663575522983074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ExcludedPropertiesInInspector:
-  - m_Script
-  m_LockStageInInspector: 
-  m_StreamingVersion: 20170927
-  m_Priority: 10
-  m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 6196417022397234430}
-  m_Lens:
-    FieldOfView: 60
-    OrthographicSize: 6.6983204
-    NearClipPlane: 0.3
-    FarClipPlane: 1000
-    Dutch: 0
-    ModeOverride: 0
-    LensShift: {x: 0, y: 0}
-    GateFit: 2
-    FocusDistance: 10
-    m_SensorSize: {x: 1, y: 1}
-  m_Transitions:
-    m_BlendHint: 0
-    m_InheritPosition: 0
-    m_OnCameraLive:
-      m_PersistentCalls:
-        m_Calls: []
-  m_LegacyBlendHint: 0
-  m_ComponentOwner: {fileID: 8214328059462726551}
 --- !u!1 &3611588500815749224
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,8 +105,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.5566038, g: 0.07613921, b: 0.07613921, a: 1}
+  m_Sprite: {fileID: 21300000, guid: ed6c6cbb2cfd67b418e58e1f454ad73b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -260,8 +220,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.5566038, g: 0.07613921, b: 0.07613921, a: 1}
+  m_Sprite: {fileID: 21300000, guid: ed6c6cbb2cfd67b418e58e1f454ad73b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -344,8 +304,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.5566038, g: 0.07613921, b: 0.07613921, a: 1}
+  m_Sprite: {fileID: 21300000, guid: ed6c6cbb2cfd67b418e58e1f454ad73b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -829,7 +789,7 @@ Transform:
   m_GameObject: {fileID: 6865899563175180341}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13, y: 8, z: -0.04587555}
+  m_LocalPosition: {x: 17, y: 10, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -853,6 +813,8 @@ MonoBehaviour:
   parent: {fileID: 6589287937312838059}
   contain: {fileID: 6865899563175180341}
   currentHearts: 0
+  alive: {fileID: 21300000, guid: ed6c6cbb2cfd67b418e58e1f454ad73b, type: 3}
+  dead: {fileID: 21300000, guid: e8aa73bfc60504c4eb94b61cdfefc04a, type: 3}
 --- !u!1 &7671482044068399560
 GameObject:
   m_ObjectHideFlags: 0
@@ -862,7 +824,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8214328059462726551}
-  - component: {fileID: 1893424911646307109}
   - component: {fileID: 7729445121773914006}
   m_Layer: 0
   m_Name: cm
@@ -886,18 +847,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5000887499450790329}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1893424911646307109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7671482044068399560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &7729445121773914006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -952,7 +901,6 @@ GameObject:
   - component: {fileID: 299566240101155773}
   - component: {fileID: 3766863661476401552}
   - component: {fileID: 2153222040188878883}
-  - component: {fileID: 896820987742607776}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1034,37 +982,3 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8554511558037440586}
   m_Enabled: 1
---- !u!114 &896820987742607776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8554511558037440586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShowDebugText: 0
-  m_ShowCameraFrustum: 1
-  m_IgnoreTimeScale: 0
-  m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
-  m_BlendUpdateMethod: 1
-  m_DefaultBlend:
-    m_Style: 1
-    m_Time: 2
-    m_CustomCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
-  m_CameraCutEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_CameraActivatedEvent:
-    m_PersistentCalls:
-      m_Calls: []

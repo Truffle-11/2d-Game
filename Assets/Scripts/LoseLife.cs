@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LoseLife : MonoBehaviour
 {
     public Movement parent;
     public GameObject contain;
     public float currentHearts;
+
+    public Sprite alive;
+    public Sprite dead;
 
     // Start is called before the first frame update
     void Start()
@@ -28,9 +32,11 @@ public class LoseLife : MonoBehaviour
             Transform heart = transform.GetChild(i);
 
             if (i < currentHearts)
-                heart.gameObject.SetActive(true);   // show heart
+                heart.GetComponent<SpriteRenderer>().sprite = alive;   // show heart
             else
-                heart.gameObject.SetActive(false);  // hide heart
+                heart.GetComponent<SpriteRenderer>().sprite = dead; // hide heart
+            
+            heart.gameObject.SetActive(true);
         }
     }
 }
