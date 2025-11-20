@@ -20,10 +20,10 @@ public class Movement : NetworkBehaviour
     private bool isDead;
     private float moveInput;
     private bool jumpRequested;
-    public GameObject contain;
-    public float currentHearts;
-    public Sprite alive;
-    public Sprite dead;
+
+    public GameObject DeadFinger1;
+    public GameObject DeadFinger2;
+    public GameObject DeadFinger3;
 
     void Start()
     {
@@ -54,10 +54,10 @@ public class Movement : NetworkBehaviour
     }
 
     void Update()
-    {
+    {   
+        if (!IsOwner) return; // EVERYTHING GOES UNDER THIS
+
         UpdateHearts();
-        
-        if (!IsOwner) return;
 
         if (!isDead && health <= 0)
         {
@@ -128,16 +128,26 @@ public class Movement : NetworkBehaviour
 
     void UpdateHearts()
     {
-        for (int i = 0; i < contain.transform.childCount; i++)
+        if (health == 3)
         {
-            Transform heart = contain.transform.GetChild(i);
+            DeadFinger1.SetActive(false);
+            DeadFinger2.SetActive(false);
+            DeadFinger3.SetActive(false);
 
-            if (i < health)
-                heart.GetComponent<SpriteRenderer>().sprite = alive;   // show heart
-            else
-                heart.GetComponent<SpriteRenderer>().sprite = dead; // hide heart
-            
-            heart.gameObject.SetActive(true);
+        }
+        else if (health == 2)
+        {
+            DeadFinger1.SetActive(true);
+            DeadFinger2.SetActive(false);
+            DeadFinger3.SetActive(false);
+
+        }
+        else if (health == 1)
+        {
+            DeadFinger1.SetActive(true);
+            DeadFinger2.SetActive(true);
+            DeadFinger3.SetActive(false);
+
         }
     }
 }
