@@ -8,12 +8,11 @@ public class UsernameSelector : MonoBehaviour
     public string[] wordType1;
     public string[] wordType2;
 
-    private string[] generatedNames;
+    public string[] rareWordType1;
+    public string[] rareWordType2;
 
-    private void Awake()
-    {
-        GenerateNames();
-    }
+    [Range(0f, 100f)]
+    public float rareChancePercentage = 1f;
 
     private void Start()
     {
@@ -36,29 +35,48 @@ public class UsernameSelector : MonoBehaviour
         Debug.Log("UsernameSelector: saved username as '" + SessionInfo.Username + "'");
     }
 
-    private void GenerateNames()
-    {
-        int total = wordType1.Length * wordType2.Length;
-        generatedNames = new string[total];
-
-        int index = 0;
-
-        foreach (string w1 in wordType1)
-        {
-            foreach (string w2 in wordType2)
-            {
-                generatedNames[index] = w1 + w2;
-                index++;
-            }
-        }
-    }
-
     private string GetRandomName()
     {
-        if (generatedNames != null && generatedNames.Length > 0)
-            return generatedNames[Random.Range(0, generatedNames.Length)];
+        bool rare = Random.value * 100f < rareChancePercentage;
 
-        return "Player";
+        if (rare)
+        {
+            return GetRareCombo();
+        }
+
+        return GetNormalCombo();
+    }
+
+    private string GetNormalCombo()
+    {
+        if (wordType1.Length == 0 || wordType2.Length == 0)
+            return "Player";
+
+        int i1 = Random.Range(0, wordType1.Length);
+        int i2 = Random.Range(0, wordType2.Length);
+        return wordType1[i1] + wordType2[i2];
+    }
+
+    private string GetRareCombo()
+    {
+        bool rare1Available = rareWordType1.Length > 0;
+        bool rare2Available = rareWordType2.Length > 0;
+
+        bool normal1Available = wordType1.Length > 0;
+        bool normal2Available = wordType2.Length > 0;
+
+        bool useRare1 = rare1Available && Random.value < 0.5f;
+        bool useRare2 = rare2Available && Random.value < 0.5f;
+
+        string part1 = useRare1 && rare1Available
+            ? rareWordType1[Random.Range(0, rareWordType1.Length)]
+            : wordType1[Random.Range(0, wordType1.Length)];
+
+        string part2 = useRare2 && rare2Available
+            ? rareWordType2[Random.Range(0, rareWordType2.Length)]
+            : wordType2[Random.Range(0, wordType2.Length)];
+
+        return part1 + part2;
     }
 
     public void SubmitColor()
@@ -67,15 +85,15 @@ public class UsernameSelector : MonoBehaviour
         {
             Color32[] colors = new Color32[]
             {
-                new Color32(255, 0, 0, 255),     // Red
-                new Color32(0, 0, 255, 255),     // Blue
-                new Color32(0, 255, 0, 255),     // Green
-                new Color32(255, 255, 0, 255),   // Yellow
-                new Color32(255, 127, 0, 255),   // Orange
-                new Color32(0, 255, 255, 255),   // Cyan
-                new Color32(255, 127, 255, 255), // Pink
-                new Color32(127, 0, 255, 255),   // Purple
-                new Color32(127, 255, 0, 255)    // Lime green
+                new Color32(255, 0, 0, 255),
+                new Color32(0, 0, 255, 255),
+                new Color32(0, 255, 0, 255),
+                new Color32(255, 255, 0, 255),
+                new Color32(255, 127, 0, 255),
+                new Color32(0, 255, 255, 255),
+                new Color32(255, 127, 255, 255),
+                new Color32(127, 0, 255, 255),
+                new Color32(127, 255, 0, 255)
             };
 
             SessionInfo.PlayerColor = colors[Random.Range(0, colors.Length)];

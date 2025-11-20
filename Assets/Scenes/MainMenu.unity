@@ -4168,7 +4168,7 @@ GameObject:
   - component: {fileID: 1644625720}
   - component: {fileID: 1644625721}
   m_Layer: 5
-  m_Name: UsernamesAndColor
+  m_Name: UsernamesAndColors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4304,6 +4304,20 @@ MonoBehaviour:
   - ' Murderer'
   - ' Zonk'
   - ' Unc'
+  rareWordType1:
+  - Mr.
+  - Dead
+  - Fuck ass
+  - 
+  - Master
+  rareWordType2:
+  - ' Jacobs'
+  - ' Stripper'
+  - ' Vasectomy'
+  - ' Cocksucker'
+  - 
+  - ' Bait'
+  rareChancePercentage: 0.00001
 --- !u!1 &1709871199
 GameObject:
   m_ObjectHideFlags: 0
