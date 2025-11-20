@@ -4261,8 +4261,15 @@ MonoBehaviour:
   - Autistic
   - Cancerous
   - Religious
-  - Dislexic
+  - Ydsixlec
   - Diabetic
+  - Young
+  - Old
+  - Kind of a
+  - Almost a
+  - Im a
+  - Not a
+  - Non Gender Specific
   wordType2:
   - ' Flamingo'
   - ' Bird'
@@ -4317,7 +4324,7 @@ MonoBehaviour:
   - ' Cocksucker'
   - 
   - ' Bait'
-  rareChancePercentage: 0.00001
+  rareChancePercentage: 0.001
 --- !u!1 &1709871199
 GameObject:
   m_ObjectHideFlags: 0
