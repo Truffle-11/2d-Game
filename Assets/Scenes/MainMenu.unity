@@ -4219,17 +4219,17 @@ MonoBehaviour:
   - Mean
   - Angry
   - Gleeful
-  - I Love
-  - I Hate
+  - ILove
+  - IHate
   - Big
   - Huge
   - MASSIVE
   - Normal
   - Neutral
-  - small
-  - tiny
-  - little
-  - atomic
+  - Small
+  - Tiny
+  - Little
+  - Atomic
   - Universal
   - Godly
   - Interesting
@@ -4254,9 +4254,9 @@ MonoBehaviour:
   - Hammered
   - Schizo
   - Cixelsyd
-  - Some Random
+  - SomeRandom
   - Folded
-  - 47 Chromosomed
+  - 47Chromosomed
   - Tight
   - Autistic
   - Cancerous
@@ -4265,65 +4265,75 @@ MonoBehaviour:
   - Diabetic
   - Young
   - Old
-  - Kind of a
-  - Almost a
-  - Im a
-  - Not a
-  - Non Gender Specific
+  - KindOfA
+  - AlmostA
+  - ImA
+  - NotA
+  - NonGenderSpecific
+  - Democratic
+  - Republican
+  - Lethal
+  - Dangerous
+  - Socialist
+  - NotDangerous
+  - Harmful
+  - Harmless
+  - CantBeA
+  - CanBeA
+  - Chicken
   wordType2:
-  - ' Flamingo'
-  - ' Bird'
-  - ' Tiger'
-  - ' Human'
-  - ' Fish'
-  - ' Angel'
-  - ' Devil'
-  - ' Bobertson'
-  - ' Man'
-  - ' Woman'
-  - ' Garrison'
-  - ' Alligator'
-  - ' Shark'
-  - ' Cube'
-  - ' Knox'
-  - ' Trent'
-  - ' Frog'
-  - ' Shrimp'
-  - ' Zebra'
-  - ' Hog'
-  - ' Dog'
-  - ' Cat'
-  - ' Unicorn'
-  - ' God'
-  - ' Satan'
-  - ' Rizzler'
-  - ' Thyroid'
-  - ' Pipe'
-  - ' Wackass'
-  - ' Severed Finger'
-  - ' Gyatt'
-  - ' Mitochondria'
-  - ' Left ear lobe'
-  - ' Head'
-  - ' Toilet'
-  - ' Cocaine'
-  - ' Toddler'
-  - ' Murderer'
-  - ' Zonk'
-  - ' Unc'
+  - Flamingo
+  - Bird
+  - Tiger
+  - Human
+  - Fish
+  - Angel
+  - Devil
+  - Bobertson
+  - Man
+  - Woman
+  - Garrison
+  - Alligator
+  - Shark
+  - Cube
+  - Knox
+  - Trent
+  - Frog
+  - Shrimp
+  - Zebra
+  - Hog
+  - Dog
+  - Cat
+  - Unicorn
+  - God
+  - Satan
+  - Rizzler
+  - Thyroid
+  - Pipe
+  - Wackass
+  - SeveredFinger
+  - Gyatt
+  - Mitochondria
+  - LeftEarLobe
+  - Head
+  - Toilet
+  - Cocaine
+  - Toddler
+  - Murderer
+  - Zonk
+  - Unc
+  - Helldiver
+  - Girl
+  - Boy
+  - Horse
+  - Jockey
   rareWordType1:
   - Mr.
-  - Dead
-  - Fuck ass
   - 
-  - Master
+  - Chalking
   rareWordType2:
-  - ' Jacobs'
-  - ' Stripper'
-  - ' Vasectomy'
-  - ' Cocksucker'
-  - 
-  - ' Bait'
+  - Jacobs
+  - Jickey
   rareChancePercentage: 0.001
 --- !u!1 &1709871199
 GameObject:
@@ -5342,7 +5352,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1644625721}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UsernameSelector, Assembly-CSharp
         m_MethodName: SubmitUsername
         m_Mode: 1

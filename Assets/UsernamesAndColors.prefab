@@ -1,0 +1,180 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3833122979052951162
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1928793399435237745}
+  - component: {fileID: 1159668764257343910}
+  m_Layer: 5
+  m_Name: UsernamesAndColors
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1928793399435237745
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3833122979052951162}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1159668764257343910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3833122979052951162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d912c0d9d0486d74daa7c33db1d814d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  usernameInputField: {fileID: 0}
+  wordType1:
+  - Cool
+  - Ugly
+  - Handsome
+  - Sad
+  - Happy
+  - Flabbergasted
+  - Amazing
+  - Bob
+  - Kind
+  - Mean
+  - Angry
+  - Gleeful
+  - ILove
+  - IHate
+  - Big
+  - Huge
+  - MASSIVE
+  - Normal
+  - Neutral
+  - Small
+  - Tiny
+  - Little
+  - Atomic
+  - Universal
+  - Godly
+  - Interesting
+  - Intriguing
+  - Confuzzling
+  - Eccentric
+  - Fantastical
+  - Stupendous
+  - Incredible
+  - Spectacular
+  - Great
+  - Fat
+  - Skinny
+  - Zesty
+  - Tubular
+  - Gay
+  - Heavy
+  - Lowkey
+  - Currently
+  - Crippled
+  - Hard
+  - Hammered
+  - Schizo
+  - Cixelsyd
+  - SomeRandom
+  - Folded
+  - 47Chromosomed
+  - Tight
+  - Autistic
+  - Cancerous
+  - Religious
+  - Ydsixlec
+  - Diabetic
+  - Young
+  - Old
+  - KindOfA
+  - AlmostA
+  - ImA
+  - NotA
+  - NonGenderSpecific
+  - Democratic
+  - Republican
+  - Lethal
+  - Dangerous
+  - Socialist
+  - NotDangerous
+  - Harmful
+  - Harmless
+  - CantBeA
+  - CanBeA
+  - Chicken
+  wordType2:
+  - Flamingo
+  - Bird
+  - Tiger
+  - Human
+  - Fish
+  - Angel
+  - Devil
+  - Bobertson
+  - Man
+  - Woman
+  - Garrison
+  - Alligator
+  - Shark
+  - Cube
+  - Knox
+  - Trent
+  - Frog
+  - Shrimp
+  - Zebra
+  - Hog
+  - Dog
+  - Cat
+  - Unicorn
+  - God
+  - Satan
+  - Rizzler
+  - Thyroid
+  - Pipe
+  - Wackass
+  - SeveredFinger
+  - Gyatt
+  - Mitochondria
+  - LeftEarLobe
+  - Head
+  - Toilet
+  - Cocaine
+  - Toddler
+  - Murderer
+  - Zonk
+  - Unc
+  - Helldiver
+  - Girl
+  - Boy
+  - Horse
+  - Jockey
+  rareWordType1:
+  - Mr.
+  - 
+  - Chalking
+  rareWordType2:
+  - Jacobs
+  - Jickey
+  rareChancePercentage: 0.001
