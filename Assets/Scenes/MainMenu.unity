@@ -3363,7 +3363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxConnections: 6
-  gameplaySceneName: GameLobby
+  gameplaySceneName: 2D GAME OF HELL
 --- !u!4 &1159246349
 Transform:
   m_ObjectHideFlags: 0
