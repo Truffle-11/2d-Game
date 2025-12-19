@@ -135,14 +135,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground prefab (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 2844470950508933611, guid: 5b105267e03252b449ea3b306327dede, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2844470950508933611, guid: 5b105267e03252b449ea3b306327dede, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     - target: {fileID: 6735067463895881673, guid: 5b105267e03252b449ea3b306327dede, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.6225777
@@ -204,14 +196,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: fish (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     - target: {fileID: 5418677245999179995, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -24.4641
@@ -269,14 +253,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: fish (6)
       objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     - target: {fileID: 5418677245999179995, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -22.750223
@@ -333,14 +309,6 @@ PrefabInstance:
     - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_Name
       value: fish (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_TagString
-      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5418677245999179995, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -443,14 +411,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: dog core (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 8824545240812003875, guid: e7b07ad18bc8d7547b27608d95c52cc2, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8824545240812003875, guid: e7b07ad18bc8d7547b27608d95c52cc2, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -467,14 +427,6 @@ PrefabInstance:
     - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_Name
       value: fish (22)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_TagString
-      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5418677245999179995, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -533,14 +485,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: fish (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     - target: {fileID: 5418677245999179995, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.06
@@ -598,14 +542,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: fish (18)
       objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     - target: {fileID: 5418677245999179995, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -304.5701
@@ -662,9 +598,9 @@ GameObject:
   - component: {fileID: 314433161}
   - component: {fileID: 314433160}
   - component: {fileID: 314433159}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: ground (2)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -791,8 +727,6 @@ GameObject:
   m_Component:
   - component: {fileID: 528736181}
   - component: {fileID: 528736180}
-  - component: {fileID: 528736183}
-  - component: {fileID: 528736182}
   m_Layer: 0
   m_Name: finnish flag
   m_TagString: Untagged
@@ -867,63 +801,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &528736182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 528736179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1591111b4a3524244b26e6b1a9bc24f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!61 &528736183
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 528736179}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 25.6, y: 15.65}
-    newSize: {x: 25.6, y: 15.65}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 25.6, y: 15.65}
-  m_EdgeRadius: 0
 --- !u!1001 &555961537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -935,14 +812,6 @@ PrefabInstance:
     - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_Name
       value: fish (21)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_TagString
-      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5418677245999179995, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1001,14 +870,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground prefab (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 2844470950508933611, guid: 5b105267e03252b449ea3b306327dede, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2844470950508933611, guid: 5b105267e03252b449ea3b306327dede, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     - target: {fileID: 6735067463895881673, guid: 5b105267e03252b449ea3b306327dede, type: 3}
       propertyPath: m_LocalPosition.x
       value: -22.94
@@ -1066,14 +927,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground prefab (6)
       objectReference: {fileID: 0}
-    - target: {fileID: 2844470950508933611, guid: 5b105267e03252b449ea3b306327dede, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2844470950508933611, guid: 5b105267e03252b449ea3b306327dede, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     - target: {fileID: 6735067463895881673, guid: 5b105267e03252b449ea3b306327dede, type: 3}
       propertyPath: m_LocalPosition.x
       value: -282.65164
@@ -1130,14 +983,6 @@ PrefabInstance:
     - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_Name
       value: fish (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_TagString
-      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5418677245999179995, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1320,14 +1165,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: dog core (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 8824545240812003875, guid: e7b07ad18bc8d7547b27608d95c52cc2, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8824545240812003875, guid: e7b07ad18bc8d7547b27608d95c52cc2, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1485,14 +1322,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: kinda spicy (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 3041947118024313332, guid: cfbbc27cdbeebd3438dbf4d93567abe3, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3041947118024313332, guid: cfbbc27cdbeebd3438dbf4d93567abe3, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1558,14 +1387,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: kinda spicy (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 3041947118024313332, guid: cfbbc27cdbeebd3438dbf4d93567abe3, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3041947118024313332, guid: cfbbc27cdbeebd3438dbf4d93567abe3, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1582,14 +1403,6 @@ PrefabInstance:
     - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_Name
       value: fish (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_TagString
-      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5418677245999179995, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_LocalScale.x
@@ -1658,9 +1471,9 @@ GameObject:
   m_Component:
   - component: {fileID: 930660339}
   - component: {fileID: 930660338}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: fish (13)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1788,14 +1601,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: dog core (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 8824545240812003875, guid: e7b07ad18bc8d7547b27608d95c52cc2, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8824545240812003875, guid: e7b07ad18bc8d7547b27608d95c52cc2, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1812,14 +1617,6 @@ PrefabInstance:
     - target: {fileID: 2844470950508933611, guid: 5b105267e03252b449ea3b306327dede, type: 3}
       propertyPath: m_Name
       value: ground prefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 2844470950508933611, guid: 5b105267e03252b449ea3b306327dede, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2844470950508933611, guid: 5b105267e03252b449ea3b306327dede, type: 3}
-      propertyPath: m_TagString
-      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6735067463895881673, guid: 5b105267e03252b449ea3b306327dede, type: 3}
       propertyPath: m_LocalScale.x
@@ -2026,14 +1823,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: dog core (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 8824545240812003875, guid: e7b07ad18bc8d7547b27608d95c52cc2, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8824545240812003875, guid: e7b07ad18bc8d7547b27608d95c52cc2, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2091,14 +1880,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: dog core (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 8824545240812003875, guid: e7b07ad18bc8d7547b27608d95c52cc2, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8824545240812003875, guid: e7b07ad18bc8d7547b27608d95c52cc2, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2115,14 +1896,6 @@ PrefabInstance:
     - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_Name
       value: fish (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_TagString
-      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5418677245999179995, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2181,14 +1954,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: fish (19)
       objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     - target: {fileID: 5418677245999179995, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -282.91895
@@ -2245,14 +2010,6 @@ PrefabInstance:
     - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_Name
       value: fish (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_TagString
-      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5418677245999179995, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_LocalScale.x
@@ -2367,14 +2124,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: dog core (7)
       objectReference: {fileID: 0}
-    - target: {fileID: 8824545240812003875, guid: e7b07ad18bc8d7547b27608d95c52cc2, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8824545240812003875, guid: e7b07ad18bc8d7547b27608d95c52cc2, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2391,14 +2140,6 @@ PrefabInstance:
     - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_Name
       value: fish (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_TagString
-      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5418677245999179995, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2505,14 +2246,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: dog core (6)
       objectReference: {fileID: 0}
-    - target: {fileID: 8824545240812003875, guid: e7b07ad18bc8d7547b27608d95c52cc2, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8824545240812003875, guid: e7b07ad18bc8d7547b27608d95c52cc2, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2612,9 +2345,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1805262621}
   - component: {fileID: 1805262620}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: fish (12)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2746,14 +2479,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: kinda spicy (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 3041947118024313332, guid: cfbbc27cdbeebd3438dbf4d93567abe3, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3041947118024313332, guid: cfbbc27cdbeebd3438dbf4d93567abe3, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2770,14 +2495,6 @@ PrefabInstance:
     - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_Name
       value: fish (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_TagString
-      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5418677245999179995, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2835,14 +2552,6 @@ PrefabInstance:
     - target: {fileID: 2844470950508933611, guid: 5b105267e03252b449ea3b306327dede, type: 3}
       propertyPath: m_Name
       value: ground prefab (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2844470950508933611, guid: 5b105267e03252b449ea3b306327dede, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2844470950508933611, guid: 5b105267e03252b449ea3b306327dede, type: 3}
-      propertyPath: m_TagString
-      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6735067463895881673, guid: 5b105267e03252b449ea3b306327dede, type: 3}
       propertyPath: m_LocalScale.x
@@ -2957,14 +2666,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: kinda spicy (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 3041947118024313332, guid: cfbbc27cdbeebd3438dbf4d93567abe3, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3041947118024313332, guid: cfbbc27cdbeebd3438dbf4d93567abe3, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2981,14 +2682,6 @@ PrefabInstance:
     - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_Name
       value: fish (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_TagString
-      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5418677245999179995, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3045,9 +2738,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1848311128}
   - component: {fileID: 1848311127}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: fish (14)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3130,9 +2823,9 @@ GameObject:
   - component: {fileID: 1877218982}
   - component: {fileID: 1877218981}
   - component: {fileID: 1877218980}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: ground
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3261,14 +2954,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: fish (15)
       objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     - target: {fileID: 5418677245999179995, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.27425
@@ -3338,14 +3023,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground prefab (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 2844470950508933611, guid: 5b105267e03252b449ea3b306327dede, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2844470950508933611, guid: 5b105267e03252b449ea3b306327dede, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     - target: {fileID: 6735067463895881673, guid: 5b105267e03252b449ea3b306327dede, type: 3}
       propertyPath: m_LocalScale.x
       value: 7.149293
@@ -3406,14 +3083,6 @@ PrefabInstance:
     - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_Name
       value: fish (16)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_TagString
-      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5418677245999179995, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_LocalScale.x
@@ -3484,14 +3153,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: fish (20)
       objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     - target: {fileID: 5418677245999179995, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -271.6924
@@ -3548,14 +3209,6 @@ PrefabInstance:
     - target: {fileID: 2844470950508933611, guid: 5b105267e03252b449ea3b306327dede, type: 3}
       propertyPath: m_Name
       value: ground prefab (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2844470950508933611, guid: 5b105267e03252b449ea3b306327dede, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2844470950508933611, guid: 5b105267e03252b449ea3b306327dede, type: 3}
-      propertyPath: m_TagString
-      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6735067463895881673, guid: 5b105267e03252b449ea3b306327dede, type: 3}
       propertyPath: m_LocalScale.x
@@ -3621,9 +3274,9 @@ GameObject:
   - component: {fileID: 2046844002}
   - component: {fileID: 2046844001}
   - component: {fileID: 2046844000}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: ground (1)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3752,14 +3405,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: fish (17)
       objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     - target: {fileID: 5418677245999179995, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.1756258
@@ -3828,14 +3473,6 @@ PrefabInstance:
     - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_Name
       value: fish
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355019744612046886, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
-      propertyPath: m_TagString
-      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5418677245999179995, guid: 42186c448cde91a4c9b298dcddc789b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3938,14 +3575,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: kinda spicy
       objectReference: {fileID: 0}
-    - target: {fileID: 3041947118024313332, guid: cfbbc27cdbeebd3438dbf4d93567abe3, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3041947118024313332, guid: cfbbc27cdbeebd3438dbf4d93567abe3, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4003,14 +3632,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: dog core
       objectReference: {fileID: 0}
-    - target: {fileID: 8824545240812003875, guid: e7b07ad18bc8d7547b27608d95c52cc2, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8824545240812003875, guid: e7b07ad18bc8d7547b27608d95c52cc2, type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4027,14 +3648,6 @@ PrefabInstance:
     - target: {fileID: 2844470950508933611, guid: 5b105267e03252b449ea3b306327dede, type: 3}
       propertyPath: m_Name
       value: ground (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2844470950508933611, guid: 5b105267e03252b449ea3b306327dede, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2844470950508933611, guid: 5b105267e03252b449ea3b306327dede, type: 3}
-      propertyPath: m_TagString
-      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6735067463895881673, guid: 5b105267e03252b449ea3b306327dede, type: 3}
       propertyPath: m_LocalPosition.x
