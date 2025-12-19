@@ -12,7 +12,6 @@ public class PlayerName : NetworkBehaviour
 
     public override void OnNetworkSpawn()
     {
-        // Only submit a name if the server hasn't already set one for this object
         if (IsOwner)
         {
             if (baseName.Value.Length == 0)
@@ -30,7 +29,6 @@ public class PlayerName : NetworkBehaviour
         if (string.IsNullOrWhiteSpace(name))
             name = "Player";
 
-        // Only set if empty (prevents overwriting stats copied from GameManager)
         if (baseName.Value.Length == 0)
             baseName.Value = new FixedString64Bytes(name);
 

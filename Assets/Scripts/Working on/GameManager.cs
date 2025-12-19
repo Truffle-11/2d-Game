@@ -143,6 +143,19 @@ public class GameManager : NetworkBehaviour
         return 0;
     }
 
+    public void ApplyStoredStatsToObjectServer(ulong clientId, GameObject obj)
+    {
+        if (!IsServer) return;
+        if (obj == null) return;
+
+        string bn = GetBaseNameForClientServer(clientId);
+        int tw = GetTotalWinsForClientServer(clientId);
+
+        PlayerName pn = obj.GetComponent<PlayerName>();
+        if (pn != null)
+            pn.SetStatsServer(bn, tw);
+    }
+
     public void RegisterGhostServer(ulong ownerClientId, NetworkObject ghostNetObj)
     {
         if (!IsServer) return;
@@ -303,14 +316,9 @@ public class GameManager : NetworkBehaviour
             }
 
             if (found)
-            {
-                // winnerId CAN be 0 (host) and that's valid
                 AwardWinAndThen(winnerId, true);
-            }
             else
-            {
                 EndToLobby();
-            }
 
             return;
         }
@@ -359,6 +367,7 @@ public class GameManager : NetworkBehaviour
         currentMapIndex.Value = -1;
         DisableAllMaps();
 
+        // Ghosts will revive themselves when this becomes true
         reviveAllPlayers.Value = true;
 
         if (lobbyRoot != null) lobbyRoot.SetActive(true);
@@ -366,10 +375,10 @@ public class GameManager : NetworkBehaviour
 
         Vector3 lobbyPos = lobbySpawn != null ? lobbySpawn.position : Vector3.zero;
 
-        // Teleport players to lobby (ghosts will revive themselves)
+        // Teleport local view to lobby; server-authoritative spawns happen via GhostMovement
         TeleportAllLocalPlayersClientRpc(lobbyPos);
 
-        // Reset alive tracking for next match/lobby state
+        // Reset alive tracking for lobby state
         alivePlayers.Clear();
         eliminatedPlayers.Clear();
         foreach (KeyValuePair<ulong, NetworkClient> kvp2 in NetworkManager.Singleton.ConnectedClients)
@@ -420,18 +429,5 @@ public class GameManager : NetworkBehaviour
 
         Rigidbody2D rb = localPlayer.GetComponent<Rigidbody2D>();
         if (rb != null) rb.velocity = Vector2.zero;
-    }
-
-    public void ApplyStoredStatsToObjectServer(ulong clientId, GameObject obj)
-    {
-        if (!IsServer) return;
-        if (obj == null) return;
-
-        string bn = GetBaseNameForClientServer(clientId);
-        int tw = GetTotalWinsForClientServer(clientId);
-
-        PlayerName pn = obj.GetComponent<PlayerName>();
-        if (pn != null)
-            pn.SetStatsServer(bn, tw);
     }
 }
